@@ -3,7 +3,8 @@ import { Button } from "@/components/Button";
 import { ShieldCheck, Clock, MapPin, ArrowRight, Star, CheckCircle2, Building2, Leaf, Wind, Wrench, CheckCircle, Users, History, Target, Award, HeartHandshake, Sparkles, Stethoscope } from "lucide-react";
 import Link from "next/link";
 import { ContactSection } from "@/components/ContactSection";
-rt default function Home() {
+
+export default function Home() {
   return (
     <>
       <div className="flex flex-col min-h-screen">

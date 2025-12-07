@@ -1,5 +1,5 @@
 import React from 'react';
-import { ServicePageTemplate } from '@/components/templates/ServicePageTemplate';
+import { ServicePageTemplate } from '@/components/ServicePageTemplate';
 import { Wrench, Snowflake, Hammer, UserCheck, Clock } from 'lucide-react';
 
 export const metadata = {

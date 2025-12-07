@@ -27,7 +27,7 @@ export const FloatingContact = () => {
       try {
         const parsed = JSON.parse(savedMessages);
         // Convert string timestamps back to Date objects
-        const hydratedMessages = parsed.map((msg: any) => ({
+        const hydratedMessages = parsed.map((msg: { text: string; isUser: boolean; timestamp: string }) => ({
           ...msg,
           timestamp: new Date(msg.timestamp)
         }));
