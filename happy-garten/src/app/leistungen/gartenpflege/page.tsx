@@ -166,29 +166,64 @@ export default function GartenpflegePage() {
             </ol>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Gartenimpressionen</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/garten-1.jpg" 
-                  alt="Gepflegter Rasen" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+          <section className="py-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-16 text-center">Gartenimpressionen</h2>
+            <div className="space-y-24">
+              {/* Item 1: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/garten-1.jpg" 
+                      alt="Gepflegter Rasen" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Der perfekte Rasen</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Ein dichter, sattgrüner Rasen ist der Stolz jedes Gartenbesitzers. Wir kümmern uns um regelmäßiges Mähen, Vertikutieren und die richtige Düngung für ein perfektes Ergebnis.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/garten-2.jpg" 
-                  alt="Heckenschnitt" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 2: Text Left, Image Right */}
+              <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/garten-2.jpg" 
+                      alt="Heckenschnitt" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Formvollendete Hecken</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Ob strenger Formschnitt oder natürlicher Wuchs – wir bringen Ihre Hecken und Sträucher in Bestform. Fachgerechter Rückschnitt fördert die Gesundheit und Blühfreude Ihrer Pflanzen.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/garten-3.jpg" 
-                  alt="Beetpflege" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 3: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/garten-3.jpg" 
+                      alt="Beetpflege" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Blühende Beete</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Wir gestalten und pflegen Ihre Beete mit Liebe zum Detail. Von der Unkrautentfernung bis zur saisonalen Bepflanzung sorgen wir für farbenfrohe Akzente in Ihrem Garten.
+                  </p>
+                </div>
               </div>
             </div>
           </section>

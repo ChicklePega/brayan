@@ -144,29 +144,64 @@ export default function PraxisreinigungPage() {
             </ol>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Einblick in unsere Praxisreinigung</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/praxisreinigung-1.jpg" 
-                  alt="Hygienische Praxisreinigung" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+          <section className="py-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-16 text-center">Einblick in unsere Praxisreinigung</h2>
+            <div className="space-y-24">
+              {/* Item 1: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/praxisreinigung-1.jpg" 
+                      alt="Hygienische Sauberkeit" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Hygienische Sauberkeit</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    In medizinischen Einrichtungen ist Hygiene oberstes Gebot. Wir garantieren durch validierte Verfahren und geschultes Personal höchste Sauberkeitsstandards für Ihre Praxis.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/praxisreinigung-2.jpg" 
-                  alt="Desinfektion von Oberflächen" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 2: Text Left, Image Right */}
+              <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/praxisreinigung-2.jpg" 
+                      alt="Desinfektion von Oberflächen" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Desinfektion von Oberflächen</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Kritische Kontaktflächen wie Türgriffe, Empfangstresen und Wartebereiche werden von uns gezielt und regelmäßig desinfiziert, um Infektionsketten wirksam zu unterbrechen.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/praxisreinigung-3.jpg" 
-                  alt="Saubere Behandlungsräume" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 3: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/praxisreinigung-3.jpg" 
+                      alt="Saubere Behandlungsräume" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Saubere Behandlungsräume</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Ihre Behandlungsräume sind das Herzstück Ihrer Praxis. Wir sorgen dafür, dass sich Patienten und Personal in einer makellos sauberen Umgebung sicher fühlen können.
+                  </p>
+                </div>
               </div>
             </div>
           </section>

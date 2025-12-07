@@ -163,29 +163,64 @@ export default function LueftungsreinigungPage() {
             </ol>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Einblick in unsere Arbeit</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/lueftungsreinigung-1.jpg" 
-                  alt="Inspektion von Lüftungskanälen" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+          <section className="py-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-16 text-center">Einblick in unsere Arbeit</h2>
+            <div className="space-y-24">
+              {/* Item 1: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/lueftungsreinigung-1.jpg" 
+                      alt="Dunstabzugshaube Filter reinigen" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Dunstabzugshaube Filter reinigen</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Unsere Fachleute gewährleisten die regelmäßige Wartung von Gastronomischen Dunstabzügen und Kochfeldlüftungssystemen, um die Effizienz Ihrer Abluftanlagen für Küchen zu gewährleisten.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/lueftungsreinigung-2.jpg" 
-                  alt="Reinigung von RLT-Anlagen" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 2: Text Left, Image Right */}
+              <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/lueftungsreinigung-2.jpg" 
+                      alt="Lüftungsanlagen reinigen" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Lüftungsanlagen reinigen</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Vertrauen Sie auf unsere Erfahrung bei der Reinigung von Dunstabzugshauben, Entfettung von Dunstabzugshauben und Reinigung von Rauchabzugskanälen. Unsere Dienstleistungen zielen darauf ab, höchste Standards in Bezug auf Hygiene und Funktionalität zu erreichen.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/lueftungsreinigung-3.jpg" 
-                  alt="Filterwechsel und Wartung" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 3: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/lueftungsreinigung-3.jpg" 
+                      alt="Reinigung von Dunstabzugshauben" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Reinigung von Dunstabzugshauben</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Unsere Experten sorgen dafür, dass Ihre Rauchabzugssysteme optimal funktionieren, um eine gesunde Arbeitsumgebung in der Küche zu gewährleisten.
+                  </p>
+                </div>
               </div>
             </div>
           </section>

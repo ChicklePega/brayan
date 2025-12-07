@@ -191,29 +191,64 @@ export default function HausmeisterservicePage() {
             </ol>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Impressionen unserer Objekte</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/hausmeister-1.jpg" 
-                  alt="Gepflegte Außenanlagen" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+          <section className="py-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-16 text-center">Impressionen unserer Objekte</h2>
+            <div className="space-y-24">
+              {/* Item 1: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/hausmeister-1.jpg" 
+                      alt="Gepflegte Außenanlagen" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Gepflegte Außenanlagen</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Der erste Eindruck zählt. Wir sorgen dafür, dass Ihre Grünflächen, Wege und Zufahrten stets sauber und einladend wirken – zu jeder Jahreszeit.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/hausmeister-2.jpg" 
-                  alt="Technische Kontrolle" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 2: Text Left, Image Right */}
+              <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/hausmeister-2.jpg" 
+                      alt="Technische Kontrolle" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Technische Kontrolle</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Wir behalten Ihre Haustechnik im Blick. Regelmäßige Kontrollgänge und die Überwachung von Heizung, Licht und Aufzügen verhindern teure Ausfälle.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/hausmeister-3.jpg" 
-                  alt="Winterdienst im Einsatz" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 3: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/hausmeister-3.jpg" 
+                      alt="Winterdienst im Einsatz" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Sicherheit im Winter</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Wenn es schneit und friert, sind wir zur Stelle. Unser zuverlässiger Winterdienst sorgt für verkehrssichere Wege und befreit Sie von der Haftung.
+                  </p>
+                </div>
               </div>
             </div>
           </section>

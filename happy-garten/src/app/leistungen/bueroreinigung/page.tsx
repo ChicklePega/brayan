@@ -154,29 +154,64 @@ export default function BueroreinigungPage() {
             </ol>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Einblick in unsere Büroreinigung</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/buero-1.jpg" 
-                  alt="Saubere Arbeitsplätze" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+          <section className="py-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-16 text-center">Einblick in unsere Büroreinigung</h2>
+            <div className="space-y-24">
+              {/* Item 1: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/buero-1.jpg" 
+                      alt="Saubere Arbeitsplätze" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Saubere Arbeitsplätze</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Ein aufgeräumter und sauberer Schreibtisch fördert die Konzentration. Wir sorgen dafür, dass Ihre Mitarbeiter jeden Morgen an einen frischen Arbeitsplatz zurückkehren.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/buero-2.jpg" 
-                  alt="Konferenzraum Reinigung" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 2: Text Left, Image Right */}
+              <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/buero-2.jpg" 
+                      alt="Konferenzraum Reinigung" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Repräsentative Meetingräume</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Ihre Konferenzräume sind das Aushängeschild für Kunden und Partner. Wir garantieren staubfreie Oberflächen, saubere Böden und ein gepflegtes Ambiente für Ihre Meetings.
+                  </p>
+                </div>
               </div>
-              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
-                <img 
-                  src="/images/services/buero-3.jpg" 
-                  alt="Sanitärhygiene" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+
+              {/* Item 3: Image Left, Text Right */}
+              <div className="flex flex-col md:flex-row items-center gap-12">
+                <div className="w-full md:w-1/2">
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/images/services/buero-3.jpg" 
+                      alt="Sanitärhygiene" 
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </div>
+                <div className="w-full md:w-1/2">
+                  <h3 className="text-3xl font-bold mb-6 text-gray-900">Hygienische Sanitärbereiche</h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    Sauberkeit in Toiletten und Waschräumen ist unverzichtbar. Wir reinigen und desinfizieren gründlich und füllen Verbrauchsmaterialien zuverlässig auf.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
