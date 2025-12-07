@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero } from '@/components/organisms/Hero';
+import { Hero } from '@/components/Hero';
 
 export const metadata = {
   title: 'AGB | Happy Garten Hamburg',

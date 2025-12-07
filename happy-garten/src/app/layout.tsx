@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/organisms/Header";
-import { Footer } from "@/components/organisms/Footer";
-import { FloatingContact } from "@/components/organisms/FloatingContact";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { FloatingContact } from "@/components/FloatingContact";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",

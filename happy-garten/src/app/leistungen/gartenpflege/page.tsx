@@ -1,5 +1,5 @@
 import React from 'react';
-import { ServicePageTemplate } from '@/components/templates/ServicePageTemplate';
+import { ServicePageTemplate } from '@/components/ServicePageTemplate';
 import { Flower2, Scissors, Trees, Trash2, Sprout, Droplets } from 'lucide-react';
 
 export const metadata = {

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Hero } from '@/components/organisms/Hero';
-import { Button } from '@/components/atoms/Button';
-import { ContactSection } from '@/components/organisms/ContactSection';
+import { Hero } from '@/components/Hero';
+import { Button } from '@/components/ui/Button';
+import { ContactSection } from '@/components/ContactSection';
 
 export interface ServicePageTemplateProps {
   title: string;
