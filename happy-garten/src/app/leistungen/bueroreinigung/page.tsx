@@ -155,6 +155,33 @@ export default function BueroreinigungPage() {
           </section>
 
           <section>
+            <h2 className="text-2xl font-bold text-gray-900 mb-8">Einblick in unsere Büroreinigung</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
+                <img 
+                  src="/images/services/buero-1.jpg" 
+                  alt="Saubere Arbeitsplätze" 
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
+                <img 
+                  src="/images/services/buero-2.jpg" 
+                  alt="Konferenzraum Reinigung" 
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
+                <img 
+                  src="/images/services/buero-3.jpg" 
+                  alt="Sanitärhygiene" 
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Häufig gestellte Fragen</h2>
             <div className="space-y-6">
               <div className="border-b border-gray-200 pb-4">

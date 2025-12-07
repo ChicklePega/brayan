@@ -144,6 +144,33 @@ export default function PraxisreinigungPage() {
             </ol>
           </section>
 
+          <section>
+            <h2 className="text-2xl font-bold text-gray-900 mb-8">Einblick in unsere Praxisreinigung</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
+                <img 
+                  src="/images/services/praxisreinigung-1.jpg" 
+                  alt="Hygienische Praxisreinigung" 
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
+                <img 
+                  src="/images/services/praxisreinigung-2.jpg" 
+                  alt="Desinfektion von Oberflächen" 
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
+                <img 
+                  src="/images/services/praxisreinigung-3.jpg" 
+                  alt="Saubere Behandlungsräume" 
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </section>
+
           <section className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Qualitätssicherung & Dokumentation</h2>
             <p className="text-gray-700 mb-6">

@@ -144,6 +144,33 @@ export default function FensterreinigungPage() {
             </ol>
           </section>
 
+          <section>
+            <h2 className="text-2xl font-bold text-gray-900 mb-8">Impressionen unserer Arbeit</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
+                <img 
+                  src="/images/services/fensterreinigung-1.jpg" 
+                  alt="Professionelle Fensterreinigung Hamburg" 
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
+                <img 
+                  src="/images/services/fensterreinigung-2.jpg" 
+                  alt="Streifenfreie Glasreinigung" 
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
+                <img 
+                  src="/images/services/fensterreinigung-3.jpg" 
+                  alt="Reinigung von Wintergärten" 
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </section>
+
           <section className="bg-gray-50 p-8 rounded-2xl">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Warum professionelle Fensterreinigung?</h2>
             <div className="space-y-4">
