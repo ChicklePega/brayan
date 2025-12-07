@@ -374,31 +374,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industries Teaser */}
-      <section id="branchen" className="py-20 bg-gray-900 text-white min-h-screen flex flex-col justify-center">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">Speziallösungen für Ihre Branche</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {[
-              { name: "Hotels", href: "/branchen/hotels-restaurants-kantinen" },
-              { name: "Immobilien", href: "/branchen/immobilienverwaltung" },
-              { name: "Schulen", href: "/branchen/schulen-bildung" },
-              { name: "Industrie", href: "/branchen/produktion-industrie" },
-              { name: "Büros", href: "/branchen/buerogebaeude" },
-              { name: "Praxen", href: "/branchen/gesundheitswesen" },
-            ].map((industry) => (
-              <Link 
-                key={industry.name} 
-                href={industry.href}
-                className="block p-6 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 transition-all hover:-translate-y-1"
-              >
-                <span className="font-semibold">{industry.name}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section id="faq" className="py-20 bg-white min-h-screen flex flex-col justify-center">
         <div className="container mx-auto px-4 max-w-4xl">

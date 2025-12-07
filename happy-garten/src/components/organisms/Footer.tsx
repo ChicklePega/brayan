@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
           <div>
             <Link href="/" className="inline-block mb-6">
@@ -63,33 +63,6 @@ export const Footer = () => {
               <li>
                 <Link href="/leistungen/praxisreinigung" className="text-gray-400 hover:text-primary transition-colors">
                   Praxisreinigung
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Branchen */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Branchen</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/branchen/hotels-restaurants-kantinen" className="text-gray-400 hover:text-primary transition-colors">
-                  Hotels & Gastronomie
-                </Link>
-              </li>
-              <li>
-                <Link href="/branchen/immobilienverwaltung" className="text-gray-400 hover:text-primary transition-colors">
-                  Immobilienverwaltung
-                </Link>
-              </li>
-              <li>
-                <Link href="/branchen/schulen-bildung" className="text-gray-400 hover:text-primary transition-colors">
-                  Schulen & Bildung
-                </Link>
-              </li>
-              <li>
-                <Link href="/branchen/produktion-industrie" className="text-gray-400 hover:text-primary transition-colors">
-                  Produktion & Industrie
                 </Link>
               </li>
             </ul>

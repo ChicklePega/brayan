@@ -8,7 +8,6 @@ import { Button } from '@/components/atoms/Button';
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -19,15 +18,6 @@ export const Header = () => {
     { name: 'Büroreinigung', href: '/leistungen/bueroreinigung' },
     { name: 'Fensterreinigung', href: '/leistungen/fensterreinigung' },
     { name: 'Praxisreinigung', href: '/leistungen/praxisreinigung' },
-  ];
-
-  const industries = [
-    { name: 'Hotels & Gastronomie', href: '/branchen/hotels-restaurants-kantinen' },
-    { name: 'Immobilienverwaltung', href: '/branchen/immobilienverwaltung' },
-    { name: 'Schulen & Bildung', href: '/branchen/schulen-bildung' },
-    { name: 'Produktion & Industrie', href: '/branchen/produktion-industrie' },
-    { name: 'Bürogebäude', href: '/branchen/buerogebaeude' },
-    { name: 'Gesundheitswesen', href: '/branchen/gesundheitswesen' },
   ];
 
   return (
@@ -59,26 +49,6 @@ export const Header = () => {
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
                     >
                       {service.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Industries Dropdown */}
-            <div className="relative group">
-              <button className="flex items-center text-gray-700 hover:text-primary font-medium focus:outline-none">
-                Branchen <ChevronDown className="ml-1 w-4 h-4" />
-              </button>
-              <div className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left border border-gray-100">
-                <div className="py-2">
-                  {industries.map((industry) => (
-                    <Link
-                      key={industry.href}
-                      href={industry.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
-                    >
-                      {industry.name}
                     </Link>
                   ))}
                 </div>
@@ -137,30 +107,6 @@ export const Header = () => {
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {service.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Mobile Industries */}
-            <div>
-              <button
-                onClick={() => setIsIndustriesOpen(!isIndustriesOpen)}
-                className="flex items-center justify-between w-full px-3 py-3 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md"
-              >
-                Branchen <ChevronDown className={`w-4 h-4 transform ${isIndustriesOpen ? 'rotate-180' : ''}`} />
-              </button>
-              {isIndustriesOpen && (
-                <div className="pl-6 space-y-1 bg-gray-50 rounded-md mb-1">
-                  {industries.map((industry) => (
-                    <Link
-                      key={industry.href}
-                      href={industry.href}
-                      className="block px-3 py-2 text-sm text-gray-600 hover:text-primary"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {industry.name}
                     </Link>
                   ))}
                 </div>
