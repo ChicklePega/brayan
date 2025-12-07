@@ -1,10 +1,9 @@
-import { Hero } from "@/components/organisms/Hero";
-import { Button } from "@/components/atoms/Button";
+import { Hero } from "@/components/Hero";
+import { Button } from "@/components/Button";
 import { ShieldCheck, Clock, MapPin, ArrowRight, Star, CheckCircle2, Building2, Leaf, Wind, Wrench, CheckCircle, Users, History, Target, Award, HeartHandshake, Sparkles, Stethoscope } from "lucide-react";
 import Link from "next/link";
-import { ContactSection } from "@/components/organisms/ContactSection";
-
-export default function Home() {
+import { ContactSection } from "@/components/ContactSection";
+rt default function Home() {
   return (
     <>
       <div className="flex flex-col min-h-screen">
