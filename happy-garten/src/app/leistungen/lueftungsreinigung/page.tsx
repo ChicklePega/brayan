@@ -1,5 +1,5 @@
 import React from 'react';
-import { ServicePageTemplate } from '@/components/ServicePageTemplate';
+import { ServicePageTemplate } from '@/components/templates/ServicePageTemplate';
 import { Wind, ShieldCheck, Fan, Filter } from 'lucide-react';
 
 export const metadata = {

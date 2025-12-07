@@ -1,8 +1,8 @@
-import { Hero } from "@/components/Hero";
-import { Button } from "@/components/ui/Button";
+import { Hero } from "@/components/organisms/Hero";
+import { Button } from "@/components/atoms/Button";
 import { ShieldCheck, Clock, MapPin, ArrowRight, Star, CheckCircle2, Building2, Leaf, Wind, Wrench, CheckCircle, Users, History, Target, Award, HeartHandshake, Sparkles, Stethoscope } from "lucide-react";
 import Link from "next/link";
-import { ContactSection } from "@/components/ContactSection";
+import { ContactSection } from "@/components/organisms/ContactSection";
 
 export default function Home() {
   return (

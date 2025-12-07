@@ -1,6 +1,6 @@
 import React from 'react';
-import { ContactForm } from '@/components/ContactForm';
-import { Hero } from '@/components/Hero';
+import { ContactForm } from '@/components/organisms/ContactForm';
+import { Hero } from '@/components/organisms/Hero';
 
 export const metadata = {
   title: 'Kontakt | Happy Garten Hamburg',
