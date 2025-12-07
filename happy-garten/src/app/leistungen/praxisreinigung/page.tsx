@@ -29,7 +29,7 @@ export default function PraxisreinigungPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Höchste Hygienestandards für Ihre Patienten</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              In Arztpraxen, Therapiezentren und Kliniken reicht "sauber" nicht aus – es muss hygienisch rein sein. Keime, Bakterien und Viren stellen ein Risiko für Patienten und Personal dar. Happy Garten ist Ihr spezialisierter Partner für die Praxisreinigung in Hamburg. Wir arbeiten streng nach den Richtlinien des Robert-Koch-Instituts (RKI) und Ihren individuellen Hygieneplänen.
+              In Arztpraxen, Therapiezentren und Kliniken reicht &quot;sauber&quot; nicht aus – es muss hygienisch rein sein. Keime, Bakterien und Viren stellen ein Risiko für Patienten und Personal dar. Happy Garten ist Ihr spezialisierter Partner für die Praxisreinigung in Hamburg. Wir arbeiten streng nach den Richtlinien des Robert-Koch-Instituts (RKI) und Ihren individuellen Hygieneplänen.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               Unser Team ist speziell für die Anforderungen im Gesundheitswesen geschult. Wir wissen, worauf es im Behandlungszimmer, im Wartebereich und im Labor ankommt. Mit validierten Verfahren und gelisteten Desinfektionsmitteln sorgen wir für maximale Sicherheit.

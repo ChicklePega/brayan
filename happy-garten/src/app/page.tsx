@@ -210,9 +210,9 @@ export default function Home() {
                 </div>
                 
                 <blockquote className="text-gray-700 italic mb-6">
-                  "Seit wir Happy Garten mit der Lüftungsreinigung und dem Hausmeisterservice beauftragt haben, 
+                  &quot;Seit wir Happy Garten mit der Lüftungsreinigung und dem Hausmeisterservice beauftragt haben, 
                   laufen unsere technischen Anlagen störungsfrei und das Feedback unserer Mieter ist durchweg positiv. 
-                  Ein Partner, der mitdenkt!"
+                  Ein Partner, der mitdenkt!&quot;
                 </blockquote>
                 
                 <div className="flex items-center gap-2">
@@ -245,7 +245,7 @@ export default function Home() {
               </div>
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-gray-200 shadow-sm bg-white">
                 <div className="font-bold text-gray-900 mb-1">Gründung</div>
-                <div className="text-gray-600 text-sm">Start als "Happy Garten" mit Fokus auf Gartenpflege in Hamburg-Nord.</div>
+                <div className="text-gray-600 text-sm">Start als &quot;Happy Garten&quot; mit Fokus auf Gartenpflege in Hamburg-Nord.</div>
               </div>
             </div>
             

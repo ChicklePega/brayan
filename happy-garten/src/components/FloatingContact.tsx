@@ -31,14 +31,15 @@ export const FloatingContact = () => {
           ...msg,
           timestamp: new Date(msg.timestamp)
         }));
-        setMessages(hydratedMessages);
+        // Use setTimeout to avoid synchronous state update warning
+        setTimeout(() => setMessages(hydratedMessages), 0);
       } catch (e) {
         console.error('Failed to parse chat messages', e);
       }
     }
 
     if (savedHasInteracted) {
-      setHasInteracted(JSON.parse(savedHasInteracted));
+      setTimeout(() => setHasInteracted(JSON.parse(savedHasInteracted)), 0);
     }
   }, []);
 
