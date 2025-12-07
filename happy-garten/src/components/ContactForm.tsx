@@ -53,7 +53,7 @@ export const ContactForm: React.FC = () => {
 
       setIsSuccess(true);
       reset();
-    } catch (err) {
+    } catch {
       setError('Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.');
     } finally {
       setIsSubmitting(false);
