@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  happy-garten:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: happy-garten
+    restart: unless-stopped
+    networks:
+      - traefik_proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.happy-garten.rule=Host(`happy-garten.rshamburg.de`)"
+      - "traefik.http.routers.happy-garten.entrypoints=websecure"
+      - "traefik.http.routers.happy-garten.tls=true"
+      - "traefik.http.routers.happy-garten.tls.certresolver=ncpresolver"
+      - "traefik.http.services.happy-garten.loadbalancer.server.port=3000"
+      # Optional: HTTP to HTTPS redirect
+      - "traefik.http.routers.happy-garten-http.rule=Host(`happy-garten.rshamburg.de`)"
+      - "traefik.http.routers.happy-garten-http.entrypoints=web"
+      - "traefik.http.routers.happy-garten-http.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+
+networks:
+  traefik_proxy:
+    external: true
